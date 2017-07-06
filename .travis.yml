@@ -1,0 +1,8 @@
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
+dist: trusty
+jdk:
+  - oraclejdk8
+  - openjdk8
+language: java
+sudo: false
