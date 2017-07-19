@@ -1,7 +1,14 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA:http://localhost:8761/eureka/}
+
 server:
   port: ${PORT:8888}
 
 spring:
+  application:
+    name: configserver
   cloud:
     config:
       server:
